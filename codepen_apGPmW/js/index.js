@@ -1,1 +1,0 @@
-var time = Date.now();
