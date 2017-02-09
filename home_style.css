@@ -33,12 +33,63 @@ body {
     padding: 14px 24px;
 }
 
+.buttons {
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
 .btn-circle {
-  text-align: center;
   font-size: 12px;
   line-height: 1.2;
-  padding: 6px 0;
+  padding: 0;
   border-radius: 30px;
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+    width: 30%;
+    margin: 0;
+  margin-left: 4%;
+}
+
+.btn-circle:nth-of-type(1) {
+	margin-left: 0;
+}
+
+.btn-circle p {
+	font-size: 14px;
+}
+
+.btn-circle.form {
+	display: none;
+	position: absolute;
+	margin-left: 0;
+	width: 0;
+	max-width: 700px;
+	opacity: 0;
+}
+
+.btn-circle.form.active {
+	display: block;
+	opacity: 1;
+	width: 100%;
+}
+	
+
+.btn-circle.form p {
+	color: transparent;
+}
+
+.btn-circle:focus {
+	outline: 0;
+}
+
+.table th {
+	text-align: center;
+}
+
+.jumbotron .table td {
+	text-align: center;
 }
 
 /* Supporting marketing content */
@@ -48,3 +99,11 @@ body {
 .marketing p + h4 {
     margin-top: 24px;
 }                
+
+.dropdown {
+	display: inline-block;
+}
+
+li {
+	text-shadow: none;
+}

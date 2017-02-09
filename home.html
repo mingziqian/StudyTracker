@@ -34,10 +34,11 @@
 
       <div class="jumbotron">
         <h1>Start tracking!</h1>
+<!--
         <table class="table table-striped">
           <thead>
             <tr>
-              <th><p class="lead text-info">&nbsp&nbsp&nbsp Ready to work?</p></th>
+              <th><p class="lead text-info">Ready to work?</p></th>
               <th><p class="lead text-info">Studied without app?</p></th>
               <th><p class="lead text-success">Check performance?</p></th>
             </tr>
@@ -51,6 +52,54 @@
           </tbody>
         </table>
       </div>
+-->
+			<div class="buttons">
+				
+				<div class="btn btn-primary btn-circle form" type="button">
+				Assignment
+				
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					Dropdown
+					<span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu">
+					<li><a href="#">Reading Journal</a></li>
+					<li><a href="#">Midterm Paper</a></li>
+					<li><a href="#">Final Presentation</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Add New Assignment</a></li>
+				  </ul>
+				</div>
+				
+				</div>
+				
+				<div id="select-class" class="btn btn-primary btn-circle form" type="button">
+					Select Class
+				
+					<div id="class-buttons" class="btn-group" role="group">
+						<button type="button" class="subject btn btn-default">EECS<br>330</button>
+						<button type="button" class="subject btn btn-default">Math<br>311</button>
+						<button type="button" class="subject btn btn-default">History<br>300</button>
+						<button type="button" class="subject btn btn-default">Chem<br>250</button>
+					</div>
+				
+				</div>
+				
+				<button id="study" class="btn btn-primary btn-circle" type="button">
+				<p>Ready to study?</p>
+				Start Studying
+				
+				</button>
+				
+              	<button class="btn btn-info btn-circle" type="button">
+              	<p>Studied without app?</p>
+              	Log Session</button>
+              
+           		<button class="btn btn-success btn-circle" type="button">
+           		<p>Check your performance</p>See Analytics</button>
+           	</div>
+
 
       <hr>
 
@@ -110,6 +159,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="home.js"></script>
 
   </body>
 </html>
