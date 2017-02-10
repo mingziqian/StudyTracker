@@ -7,4 +7,8 @@ $(document).ready(function(){
 	$('.subject').click(function() {
 		$('#select-class').removeClass('active');
 	});
+
+	$('.cancel').click(function() {
+		$('.form').removeClass('active');
+	});
 });
