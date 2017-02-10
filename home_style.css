@@ -14,7 +14,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    margin: 30px 0;
+    margin: 24px 0;
     text-align: center;
 }
 .jumbotron h1 {
@@ -41,7 +41,7 @@ body {
 
 .btn-circle {
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.6;
   padding: 0;
   border-radius: 30px;
   outline: 0;
@@ -99,6 +99,11 @@ body {
 .marketing p + h4 {
     margin-top: 24px;
 }                
+
+.thumbnail{
+    background: mintcream;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+}
 
 .dropdown {
 	display: inline-block;

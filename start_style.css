@@ -154,6 +154,10 @@ li {
     height: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: royalblue;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
 }
 
 #time_left{
