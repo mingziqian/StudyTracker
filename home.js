@@ -17,4 +17,8 @@ $(document).ready(function(){
 		$('#select-class').addClass('done');
 		$('.content-wrapper').addClass('active');
 	});
+
+	$('.cancel').click(function() {
+		$('.form').removeClass('active');
+	});
 });

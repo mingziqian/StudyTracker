@@ -15,7 +15,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    margin: 30px 0;
+    margin: 24px 0;
     text-align: center;
 }
 .jumbotron h1 {
@@ -41,6 +41,7 @@ body {
 }
 
 .btn-circle {
+<<<<<<< HEAD
 	font-size: 12px;
 	line-height: 1.2;
 	padding: 0;
@@ -52,6 +53,22 @@ body {
 	height: 200px;
 	margin: 0;
 	margin: 0 20px;
+=======
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 0;
+  border-radius: 30px;
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+    width: 30%;
+    margin: 0;
+  margin-left: 4%;
+}
+
+.btn-circle:nth-of-type(1) {
+	margin-left: 0;
+>>>>>>> origin/master
 }
 
 .btn-circle p {
@@ -63,7 +80,11 @@ body {
 	left: 50%;
 	transform: translatex(-365px);
 	width: 0;
+<<<<<<< HEAD
 	max-width: 690px;
+=======
+	max-width: 650px;
+>>>>>>> origin/master
 	opacity: 0;
 	transition: width 300ms ease, opacity 250ms ease 50ms;
 }
@@ -145,6 +166,11 @@ body {
     margin-top: 24px;
 }                
 
+.thumbnail{
+    background: mintcream;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
 .dropdown {
 	display: inline-block;
 }
@@ -166,6 +192,7 @@ li {
 	text-shadow: none;
 }
 
+<<<<<<< HEAD
 h3 {
 	line-height: 1em;
 }
@@ -226,4 +253,19 @@ h3 {
 	transform: rotate(-45deg);
 	content: "";
 	transition: all 300ms ease;
+=======
+#select-class, #select-assignment{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    min-height: 60px;
+}
+
+#class-buttons, .dropdown{
+    margin-left: 10px;
+}
+
+.cancel{
+    margin-left: 10px;
+>>>>>>> origin/master
 }
