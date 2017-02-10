@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
 
-	$('#study').click(function(){
-		$('.form, .exit').addClass('active');
+	$('.study').click(function(){
+		$('.form, .exit, .overlay').addClass('active');
 		$('#select-class').children('.content-wrapper').addClass('active');
 		$('#assignment-buttons').addClass('visible');
 	});
@@ -10,6 +10,7 @@ $(document).ready(function(){
 		if ($(this).hasClass('active')) {
 			$('.active').removeClass('active');
 			$('.visible').removeClass('visible');
+			$('.done').removeClass('done');
 		}
 	});
 	

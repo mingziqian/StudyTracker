@@ -92,7 +92,7 @@ body {
 
 .form #class-buttons {
 	display: none;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .form.active #class-buttons {
@@ -168,11 +168,23 @@ body {
 	padding-left: 40px;
 }
 
+.dropdown-menu {
+	left: 50%;
+	transform: translatex(-50%);
+	width: 500px;
+	font-size: 16px;
+	color: #888888;
+}
+
+.dropdown-menu li {
+	color: #888888;
+	margin: 5px 0;
+}
+
 li {
 	text-shadow: none;
 }
 
-<<<<<<< HEAD
 h3 {
 	line-height: 1em;
 }
@@ -233,4 +245,21 @@ h3 {
 	transform: rotate(-45deg);
 	content: "";
 	transition: all 300ms ease;
+}
+
+.overlay {
+	position: fixed;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: white;
+	opacity: 0;
+	transition: opacity 300ms ease;
+}
+
+.overlay.active {
+	width: 100%;
+	opacity: .75;
+	transition: opacity 300ms ease;
 }
