@@ -66,7 +66,12 @@ body {
 	width: 0;
 	max-width: 690px;
 	opacity: 0;
-	transition: width 300ms ease, opacity 250ms ease 50ms;
+	transition: width 400ms ease, opacity 100ms ease 200ms;
+}
+
+.form.btn-info {
+	transform: translatex(-50%);
+	margin-left: 0;
 }
 
 .form.active {

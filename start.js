@@ -85,5 +85,5 @@ function setGoal(){
 }
 
 function goHome(){
-    window.location.href = "index.html";
+    window.location.href = "home.html";
 }
