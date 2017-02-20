@@ -119,7 +119,6 @@ li {
     font-size: 16px;
     font-weight: bold;
     padding-top: 4px;
-    text-shadow: -0.5px 0.5px;
 }
 
 #add_goal{
@@ -127,7 +126,6 @@ li {
     font-size: 18px;
     width: 300px;
     padding: 20px;
-    text-shadow: 0.5px 0.5px;
 }
 
 #timer_p{
