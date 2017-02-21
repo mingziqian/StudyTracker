@@ -39,6 +39,20 @@
 			
 				<div class="overlay"></div>
 				
+				<div id="select-time" class="btn-primary btn-circle form" type="button">
+					<div class="content-wrapper">
+						<h3>Set Time Goal</h3>
+						<div class="time-goal">
+							<input id="hr" type="number" placeholder="00" min=0 max=99></input>
+							<div class="description">hr</div>
+							:<input id="min" type="number" placeholder="00" min=0 max=59></input>
+							<div class="description">min</div>
+						</div>
+						<a href="./start.html"><div class="arrow"></div></a>
+						<div class="arrow modal-link"></div>
+					</div>
+				</div>
+				
 				<div id="select-assignment" class="btn-primary btn-circle form" type="button">
 					<div class="content-wrapper">
 						<h3>Assignment</h3>
@@ -48,11 +62,11 @@
 								<span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu">
-								<li class="assignment"><a href="./start.html">Research Paper</a></li>
-								<li class="assignment"><a href="#">Group Project</a></li>
-								<li class="assignment"><a href="#">Final Presentation</a></li>
+								<li class="assignment">Research Paper</li>
+								<li class="assignment">Group Project</li>
+								<li class="assignment">Final Presentation</li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Add New Assignment</a></li>
+								<li>Add New Assignment</li>
 							</ul>
 						</div>
 					</div>
@@ -88,42 +102,20 @@
 
 				<!-- Modal -->
 				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						<h3 id="myModalLabel">LOG SESSION</h3>
-					</div>
-					<div class="modal-body">
-						
-							<form>
-								<div class="dropdown">
-									<button id="log_assignment" class="btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-										Choose Assignment
-										<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#" id='paper'>Research Paper</a></li>
-										<li><a href="#" id='project'>Group Project</a></li>
-										<li><a href="#" id='presentation'>Final Presentation</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a href="#">Add New Assignment</a></li>
-									</ul>
-								</div>
-								<div class="form-group">
-									<label for="time" class="title">Time Spent:</label>
-									<input type="time" class="form-control" id="time" placeholder="00:00">
-								</div>
-								<div class="form-group">
-									<label for="comment" class="title">Additional Notes:</label>
-									<textarea class="form-control" rows="3" id="comment" placeholder="(optional)"></textarea>
-								</div>
-							</form>					
-					</div>
-
-					<div class="modal-footer">
-						<button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">CANCEL</button>
-						<button class="btn btn-success" data-dismiss="modal" aria-hidden="true">SUBMIT</button>
-					</div>
-				</div>
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 id="myModalLabel">SUMMARY</h3>
+				  </div>
+				  <div class="modal-body">
+					<h4>Time Studied:</h4>
+					<h1 id="summary">00:00:00</h1>
+					<hr>
+					<h4>Thank you for logging your work!</h4>
+				  </div>
+				  <div class="modal-footer">
+					<button id="modal-done" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">DONE</button>
+				  </div>
+			  </div>
 
            	<div class="exit"></div>
            	
