@@ -64,7 +64,13 @@ var chart = Highcharts.chart('container', {
         name: 'Research Paper',
         color: '#7cb5ec',
         data: [[8,100],[12,90]]
+        },
+        {
+        name: 'Exam',
+        color: '#90ed7d',
+        data: [[18,86]]
 
+    
     }],
     
     
