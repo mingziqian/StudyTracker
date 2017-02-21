@@ -280,7 +280,7 @@ h3 {
 #log_assignment{
 	font-size: 18px;
 	color: black;
-	background-color: lightgrey;
+	background-color:lightblue;
 	max-width:  360px; 
 	margin-bottom: 12px;
 }
@@ -296,4 +296,13 @@ h3 {
 .form-control{
 	width: 300px;
 	font-size: 16px;
+}
+
+.input-mini{
+	text-align: center;
+	margin: 6px 6px;
+}
+
+.alert{
+	text-align: center;
 }
