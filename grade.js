@@ -62,7 +62,7 @@ var chart = Highcharts.chart('container', {
         
         {
         name: 'Research Paper',
-        color: 'rgba(223, 83, 83, .5)',
+        color: '#7cb5ec',
         data: [[8,100],[12,90]]
 
     }],
@@ -85,9 +85,11 @@ function enter1(){
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
         cell1.innerHTML = "Problem Set #4";
         cell2.innerHTML = "Jan 23";
-        cell3.innerHTML = document.getElementById("ps2-grade").innerHTML;
+        cell3.innerHTML = "4.6";
+        cell4.innerHTML = document.getElementById("ps2-grade").innerHTML;
         
         document.getElementById("incomplete_table").deleteRow("1");
         $('.alert-success').removeClass('hidden');
@@ -105,9 +107,11 @@ function enter2(){
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
         cell1.innerHTML = "Problem Set #5";
         cell2.innerHTML = "Jan 31";
-        cell3.innerHTML = document.getElementById("ps3-grade").innerHTML;
+        cell3.innerHTML = "7.2";
+        cell4.innerHTML = document.getElementById("ps3-grade").innerHTML;
         document.getElementById("incomplete_table").deleteRow("1");
         $('.alert-success').removeClass('hidden');
     }
