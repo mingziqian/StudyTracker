@@ -340,7 +340,7 @@ h3 {
 #log_assignment{
 	font-size: 18px;
 	color: black;
-	background-color: lightgrey;
+	background-color:lightblue;
 	max-width:  360px; 
 	margin-bottom: 12px;
 }
@@ -358,6 +358,7 @@ h3 {
 	font-size: 16px;
 }
 
+<<<<<<< HEAD
 .main {
   height: 100%;
   width: 100%;
@@ -435,4 +436,13 @@ h3 {
 
 .modal-link.active {
 	display: block;
+}
+
+.input-mini {
+	text-align: center;
+	margin: 6px 6px;
+}
+
+.alert{
+	text-align: center;
 }

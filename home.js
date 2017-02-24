@@ -8,8 +8,8 @@ $(document).ready(function(){
 		$('#select-assignment').addClass('btn-primary').removeClass('btn-info');
 		$('#select-time').addClass('btn-primary').removeClass('btn-info');
 		$('#assignment-buttons').addClass('visible');
-		$('.subject').removeAttr("data-toggle");
-		$('.subject').removeAttr("data-target");
+		$('.assignment').removeAttr("data-toggle");
+		$('.assignment').removeAttr("data-target");
 		clickedLog = false;
 	});
 	
@@ -57,15 +57,18 @@ $(document).ready(function(){
 		document.getElementById("summary").innerHTML = $time;
 	});
 
-	$('#paper').click(function() {
+	$('.paper').click(function() {
 		$('#log_assignment').text("Research Paper")
 	});
-	$('#project').click(function() {
+	$('.project').click(function() {
 		$('#log_assignment').text("Group Project")
 	});
-	$('#presentation').click(function() {
+	$('.presentation').click(function() {
 		$('#log_assignment').text("Final Presentation")
 	});
 
+	$('#submit').click(function(){
+		$('.alert').removeClass('hidden');
+	})
 
 });
