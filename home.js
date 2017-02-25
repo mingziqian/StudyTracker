@@ -7,6 +7,7 @@ $(document).ready(function(){
 		$('#select-class').addClass('btn-primary').removeClass('btn-info');
 		$('#select-assignment').addClass('btn-primary').removeClass('btn-info');
 		$('#select-time').addClass('btn-primary').removeClass('btn-info');
+		$('#select-time-title').html("Set Time Goal");
 		$('#assignment-buttons').addClass('visible');
 		$('.assignment').removeAttr("data-toggle");
 		$('.assignment').removeAttr("data-target");
@@ -19,6 +20,7 @@ $(document).ready(function(){
 		$('#select-class').addClass('btn-info').removeClass('btn-primary');
 		$('#select-assignment').addClass('btn-info').removeClass('btn-primary');
 		$('#select-time').addClass('btn-info').removeClass('btn-primary');
+		$('#select-time-title').html("Enter Time Studied");
 		$('#assignment-buttons').addClass('visible');
 		clickedLog = true;
 	});
@@ -53,8 +55,20 @@ $(document).ready(function(){
 	});
 	
 	$('.modal-link').click(function() {
-		var $time = $('#hr').val() + ":" + $('#min').val();
-		document.getElementById("summary").innerHTML = $time;
+		var $hr = $('#hr').val();
+		var $min = $('#min').val();
+		if($min == 0){
+			$min = "00";
+		}else if($min<10){
+			$min = "0"+$('#min').val();
+		}
+		if($hr == 0){
+			$hr = "00";
+		}else if($hr < 10){
+			$hr = "0"+$('#hr').val();
+		}
+		var $time =  $hr + ":" + $min;
+		$('#summary').text($time);
 	});
 
 	$('.paper').click(function() {

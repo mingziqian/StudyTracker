@@ -25,7 +25,7 @@
         	<ul class="nav nav-pills pull-right">
           		<li class="active"><a href="index.html">Home</a></li>
 				<li class="study"><a href="#">Start Studying</a></li>
-				<li><a href="grade.html">Classes</a></li>
+				<li><a href="grade.html">Grades</a></li>
 				<li><a href="#">Analytics</a></li>
         	</ul>
         	<h3><a href="index.html">Study Tracker</a></h3>
@@ -46,7 +46,7 @@
 				
 				<div id="select-time" class="btn-primary btn-circle form" type="button">
 					<div class="content-wrapper">
-						<h3>Set Time Goal</h3>
+						<h3 id="select-time-title">Set Time Goal</h3>
 						<div class="time-goal">
 							<input id="hr" type="number" placeholder="00" min=0 max=99></input>
 							<div class="description">hr</div>
@@ -113,10 +113,12 @@
 					<h3 id="myModalLabel">SUMMARY</h3>
 				  </div>
 				  <div class="modal-body">
-					<h4>Time Studied:</h4>
-					<h1 id="summary">00:00:00</h1>
+					<h3 class="text-success">Success!</h3>
+					<br>
+					<h4>Study Time Logged:</h4>
+					<h1 id="summary">00:00</h1>
 					<hr>
-					<h4>Thank you for logging your work!</h4>
+					<h4>Thank you for logging your work session!</h4>
 				  </div>
 				  <div class="modal-footer">
 					<button id="modal-done" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">DONE</button>
@@ -132,34 +134,46 @@
       	<div class="row-fluid marketing">
       	
           	<div class="thumbnail span3">
-            	<div class="caption">
+            	<div>
+					<a href="grade.html" class="btn btn-warning" role="button">
 					<h3>EECS 330</h3>
+					<h4>Enter Grades</h4>
+					<hr>
 					<p>Current Grade: 98%</p>
-					<p><a href="grade.html" class="btn btn-warning" role="button">Enter grades</a> </p>
+					</a>
             	</div>
           	</div>
 
           	<div class="thumbnail span3">
-            	<div class="caption">
+            	<div>
+					<a href="#" class="btn btn-warning" role="button">
               		<h3>Math 311</h3>
+					<h4>Enter Grades</h4>
+					<hr>
               		<p>Current Grade: 95%</p>
-              		<p><a href="grade.html" class="btn btn-warning" role="button">Enter grades</a> </p>
+              		</a>
             	</div>
 			</div>
 			
           	<div class="thumbnail span3">
-            	<div class="caption">
+            	<div>
+					<a href="#" class="btn btn-warning" role="button">
               		<h3>History 300</h3>
-              		<p>Current Grade: 60%</p>
-              		<p><a href="grade.html" class="btn btn-warning" role="button">Enter grades</a> </p>
+					<h4>Enter Grades</h4>
+					<hr>
+              		<p>Current Grade: 80%</p>
+              		</a>
             	</div>
           	</div>
 
           	<div class="thumbnail span3">
-            	<div class="caption">
+            	<div>
+					<a href="#" class="btn btn-warning" role="button">
             		<h3>Chem 250</h3>
+					<h4>Enter Grades</h4>
+					<hr>
               		<p>Current Grade: 88%</p>
-              		<p><a href="grade.html" class="btn btn-warning" role="button">Enter grades</a> </p>
+              		</a>
             	</div>
           	</div>
 
