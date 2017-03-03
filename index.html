@@ -25,7 +25,19 @@
         	<ul class="nav nav-pills pull-right">
           		<li class="active"><a href="index.html">Home</a></li>
 				<li class="study"><a href="#">Start Studying</a></li>
-				<li><a href="grade.html">Grades</a></li>
+				<li class="dropdown grades">
+					<a class="dropdown-toggle grades"
+						data-toggle="dropdown"
+						href="#">
+							Grades
+						</a>
+						<ul class="dropdown-menu grades">
+							<li><a href="grade.html">EECS 330</a></li>
+							<li><a href="#">MATH 311</a></li>
+							<li><a href="#">HISTORY 300</a></li>
+							<li><a href="#">CHEM 250</a></li>
+						</ul>
+				</li>
 				<li><a href="analytics.html">Analytics</a></li>
         	</ul>
         	<h3><a href="index.html">Study Tracker</a></h3>
@@ -99,7 +111,7 @@
               		<h3>Log<br>Session</h3>
               	</button>
               
-           		<button class="btn btn-success btn-circle" type="button">
+           		<button class="analytics btn btn-success btn-circle" type="button">
            			<p>Check your performance</p>
            			<h3>See<br>Analytics<h3>
            		</button>

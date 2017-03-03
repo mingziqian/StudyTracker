@@ -25,6 +25,10 @@ $(document).ready(function(){
 		clickedLog = true;
 	});
 
+	$('.analytics').click(function(){
+		 window.location.href = "grade.html";
+	});
+
 	$('.exit').click(function(){
 		if ($(this).hasClass('active')) {
 			$('.active').removeClass('active');
